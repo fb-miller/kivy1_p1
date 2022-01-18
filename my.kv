@@ -1,0 +1,36 @@
+#:import MDLabel kivymd.uix.label.MDLabel
+#:import MDTextField kivymd.uix.textfield.MDTextField
+#:import MDRaisedButton kivymd.uix.button.MDRaisedButton
+
+<Container>:
+    rows: 3
+    padding: 5
+
+    txt_in: id001
+    txt_liable: id002
+
+    Label:
+        text: 'Введите \n населенный \n пункт'
+        id: id002
+        font_size: 45
+        halign: 'center'
+        valign: 'middle'
+        color: .5, .5, .2, 1
+
+    TextInput:
+        id: id001
+        font_size: 25
+        size_hint: 1, .18
+        text: 'City'
+        halign: 'center'
+
+
+
+    FloatLayout:
+        Button:
+            text: 'ВПЕРЕД'
+            pos_hint: {'x': .2, 'y': .25}
+            size_hint: .6, .45
+
+            on_release:
+                root.weather()
