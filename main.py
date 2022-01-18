@@ -19,7 +19,6 @@ mgr = owm.weather_manager()
 
 Window.size = (360, 640)
 
-
 class Container(GridLayout):
     txt_in = ObjectProperty()
     txt_liable = ObjectProperty()
