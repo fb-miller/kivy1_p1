@@ -3,7 +3,7 @@ from kivy.uix.gridlayout import GridLayout
 from kivy.properties import ObjectProperty
 from kivy.core.window import Window
 from kivy.config import Config
-from kivymd.app import MDApp
+#from kivymd.app import MDApp
 
 Config.set('kivy', 'keyboard_mode', 'systemanddock')
 
@@ -42,7 +42,7 @@ class Container(GridLayout):
                     f'градусов')
 
 
-class MyApp(MDApp):
+class MyApp(App):
     theme_cls = ThemeManager()
     title = 'Weather'
 
